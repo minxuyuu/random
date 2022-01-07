@@ -2,4 +2,4 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 PROJECT(random)
 
-ADD_EXECUTABLE(random rand.c)
+ADD_EXECUTABLE(random src/rand.c)

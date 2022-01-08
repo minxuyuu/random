@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define RAND_MAX 100000
+
 void init_rand(void)
 {
 	srand(time(NULL));
@@ -10,7 +12,7 @@ void init_rand(void)
 // TODO: use a better random generator
 int random_int(int max)
 {
-	return rand() % max;
+	return rand()*max / RAND_MAX;
 }
 
 int main(int argc, char **argv)
